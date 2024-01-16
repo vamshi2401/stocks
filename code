@@ -1,0 +1,13 @@
+def stocks(A):
+    diff=[]
+    for i in range(len(A)):
+        s = A[i]
+        for j in range(i,len(A)):
+            d= A[j]-s
+            diff.append(d)
+    print(max(diff))
+
+
+
+A=list(map(int, input().split()))
+stocks(A)
